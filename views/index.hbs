@@ -1,0 +1,19 @@
+<h1>William Whitworth's Portfolio</h1>
+
+{{#each projects as |project|}}
+  <div class="project">
+    <div class="project-name">
+      <a href="/projects/{{project.name}}">
+         {{project.name}}
+       </a>
+    </div>
+
+    <div class="project-domains">
+      {{#each project.domains as |domain|}}
+        <div class="project-domain">
+          {{domain}}
+        </div>
+      {{/each}}
+    </div>
+  </div>
+{{/each}}
